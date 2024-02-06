@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/10d55a3023.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>TB Socia</title>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                rubyStar: '#9C3155',
+                lightbaige: '#FEF7EF',
+                beige: '#FCEFE5',
+                darkblue: '#2E4374',
+                blackBrown: '#1E1515',
+                darkerBlue: '#213555',
+                purpleBlue: '#565D87',
+                rubyStone: '#C2546B',
+                aquablue: '#6184A3',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-beige">
+    <!-- navbar -->
+    <nav class="fixed w-full mb-5 z-999 px-7 py-4 navbar bg-transparent z-50 md:px-20">
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div class="pt-1">
+                <img src="img/logo-removebg-preview.png" class=" w-16 " alt="">
+            </div>
+            <!-- menu -->
+            <div class="hidden md:flex space-x-6 pr-10">
+                <a href="#about" class="text-white font-raleway font-medium hover:text-aquablue">About</a>
+                <a href="#registration" class="text-white font-raleway font-medium hover:text-aquablue">Registration</a>
+                <!-- Dropdown Menu -->
+                <div class="relative group z-50">
+                    <button id="othersBtn" class="text-white hover:text-aquablue font-raleway font-medium focus:outline-none">
+                        Others
+                    </button>
+                    <div id="othersMenu" class="absolute hidden mt-2 space-y-2 z-50 bg-white text-gray-800 p-2 rounded-md shadow-md">
+                        <a href="#faq" class="block px-4 py-2 transition duration-300 hover:bg-gray-200">FAQ</a>
+                        <a href="#article" class="block px-4 py-2 transition duration-300 hover:bg-gray-200">Article</a>
+                        <a href="#guidebook" class="block px-4 py-2 transition duration-300 hover:bg-gray-200">Guide book</a>
+                    </div>
+                </div>
+            </div>
+
+
+             <!-- Hamburger Icon -->
+                <button
+                id="menu-btn"
+                class="block hamburger md:hidden focus:outline-none"
+            >
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+            <div
+                id="menu"
+                class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-beige text-rubyStar sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+            >
+                <a href="#about">About</a>
+                <a href="#registration">Registration</a>
+                <!-- Dropdown Menu -->
+                <div class=" z-50">
+                    <button id="othersBtn2" class=" hover:text-aquablue focus:outline-none">
+                        Others
+                    </button>
+                    <div id="othersMenu2" class="hidden mt-2 space-y-2 z-50 bg-white text-gray-800 p-2 rounded-md shadow-md">
+                        <a href="#faq" class="block px-4 py-2 transition duration-300 hover:bg-gray-200">FAQ</a>
+                        <a href="#article" class="block px-4 py-2 transition duration-300 hover:bg-gray-200">Article</a>
+                        <a href="#guidebook" class="block px-4 py-2 transition duration-300 hover:bg-gray-200">Guide book</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="hero" class="relative -z-10 flex items-center justify-center">
+        <img src="img/hero background .PNG" class="w-screen object-cover h-screen xl:hidden" alt="">
+        <img src="img/tbsocia hero.png" class="hidden w-screen object-cover h-screen xl:block" alt="">
+        <div class="absolute">
+            <img src="img/tb socia hero text.png" alt="" class="tbsocia-hero xl:hidden" >
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="bg-beige mb-10 md:p-10 md:mb-20 lg:pt-20 lg:pb-36 pt-20"> <!-- Add pt-20 class -->
+        <div class="flex flex-col items-center justify-center py-7 px-10 lg:px-20 xl:px-40">
+            <h2 class="font-poppins font-bold text-2xl mb-10 text-rubyStar md:text-3xl lg:text-5xl lg:mb-20">ABOUT TBSOCIA</h2>
+            <p class="font-raleway text-rubyStar lg:text-xl xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh id urna imperdiet sollicitudin vitae vel nibh. Sed in nibh vitae justo vehicula commodo molestie sed diam. Suspendisse mi nisi, vestibulum eget lobortis vel, egestas eu libero. Quisque odio turpis, molestie vel mauris at, ornare viverra metus. Quisque at congue neque, vitae pellentesque diam.</p>
+        </div> 
+    </section>
+
+
+
+     <!-- article -->
+     <section id="article" class=" bg-beige mb-5 md:mb-16">
+        <div class="flex flex-col pt-24 pb-20 px-10 md:px-20 xl:px-40">
+            <h2 class="font-raleway font-semibold text-xl mb-10 text-rubyStar md:text-3xl">Article</h2>
+
+            <div class="flex flex-wrap gap-10 items-center justify-start md:justify-start lg:gap-20">
+
+                <!-- articles -->
+                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 ">
+                    <div class="flex-1">
+                        <img src="img/hero tb socia.jpg" class="w-56 h-48 object-cover  md:w-64 lg:h-64 lg:w-80" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 py-6 lg:py-10">
+                        <h2 class="font-bold mb-4 text-lg font-raleway lg:text-xl">Judul Article</h2>
+                        <p class=" text-xs text-gray-500 font-raleway mb-3 lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempore.</p>
+                        <a href="" class="text-xs font-raleway font-bold text-aquablue underline lg:text-sm">View Article <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 ">
+                    <div class="flex-1">
+                        <img src="img/hero tb socia.jpg" class="w-56 h-48 object-cover  md:w-64 lg:h-64 lg:w-80" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 py-6 lg:py-10">
+                        <h2 class="font-bold mb-4 text-lg font-raleway lg:text-xl">Judul Article</h2>
+                        <p class=" text-xs text-gray-500 font-raleway mb-3 lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempore.</p>
+                        <a href="" class="text-xs font-raleway font-bold text-aquablue underline lg:text-sm">View Article <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 ">
+                    <div class="flex-1">
+                        <img src="img/hero tb socia.jpg" class="w-56 h-48 object-cover  md:w-64 lg:h-64 lg:w-80" alt="">
+                    </div>
+                    <div class="flex flex-col px-5 py-6 lg:py-10">
+                        <h2 class="font-bold mb-4 text-lg font-raleway lg:text-xl">Judul Article</h2>
+                        <p class=" text-xs text-gray-500 font-raleway mb-3 lg:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempore.</p>
+                        <a href="" class="text-xs font-raleway font-bold text-aquablue underline lg:text-sm">View Article <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- faq -->
+    <section id="faq" class=" mx-auto p-10 mb-5 bg-rubyStar md:px-16 md:pt-24 md:pb-20 md:mb-16 xl:px-20">
+        <div class=" mx-auto">
+            <h1 class="text-3xl text-white font-playfair text-center font-semibold mb-6 md:text-5xl md:mb-20 xl:text-7xl xl:mb-32">Frequently Asked Questions</h1>
+    
+            <div class="flex flex-col px-3 py-5 border-t border-neutral-300 md:gap-10 md:flex-row">
+                <div class="mb-5 md:w-1/3">
+                    <p class="text-gray-200">Here are some questions that people frequently asked</p>
+                </div>
+                <div class="flex md:w-2/3 flex-col">
+                    <!-- FAQ Items -->
+                    <div class="">
+                        <div class="w-full flex items-center justify-between gap-3 border-b-2  p-2 focus:outline-none" onclick="toggleAnswer('answer1')">
+                            <p class="text-white">Q: kalau ini...</p>
+                            <i class="ml-2 fas fa-chevron-down  text-white"></i>
+                        </div>
+                        <p id="answer1" class="hidden py-2  bg-rubyStone text-white px-4">A: Jika terjadi...</p>
+                    </div>
+            
+                    <div class="">
+                        <div class="w-full flex items-center justify-between gap-3 border-b-2 p-2 focus:outline-none" onclick="toggleAnswer('answer2')">
+                            <p class="text-white">Q: bagaimana cara...</p>
+                            <i class="ml-2 fas fa-chevron-down  text-white"></i>
+                        </div>
+                        <p id="answer2" class="hidden  py-2  bg-rubyStone text-white px-4 transition duration-500 ease-in-out delay-500">A: Caranya dengan...</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </section>
+
+    <!-- registration -->
+    <section id="registration" class=" bg-beige">
+        
+        <div class="flex flex-col md:flex-row">
+            <div class="flex-1 flex items-center justify-center px-5  mb-10">
+                <img src="img/banner.jpg" class="w-full h-60 object-cover md:w-auto md:rounded-2xl md:h-full" alt="">
+            </div>
+            <div class="flex-1">
+                <div class=" bg-gradient-to-r mb-10 from-rubyStone to-purpleBlue flex items-center justify-center rounded-l-3xl py-10">
+                    <h1 class="text-beige font-bold text-4xl">FREE REGISTRATION!</h1>
+                </div>
+                <form action="https://formspree.io/f/mgegedoy" method="POST" class="flex flex-col">
+                    <div class="flex flex-col">
+                        <div class="relative mb-8">
+                            <input placeholder="Your Name" id="name" name="name" type="text" class="border-b-4 border-aquablue py-1 px-2 focus:border-b-4 w-full font-raleway focus:border-blue-700 transition-colors focus:outline-none peer bg-inherit"/>
+                        </div>
+                        <input placeholder="Your Email" id="name" name="email" type="email" class="border-b-4 mb-8 border-aquablue py-1 px-2 focus:border-b-4 w-full font-raleway focus:border-blue-700 transition-colors focus:outline-none peer bg-inherit"/>
+                        <textarea name="message" id="" cols="30" rows="10" class="border-4 border-aquablue py-3 px-2 focus:border-4 w-full font-raleway focus:border-blue-700 transition-colors focus:outline-none peer bg-inherit" placeholder="Description on your project..."></textarea>
+                    </div> 
+                    <div class="mt-5 flex justify-end">
+                        <button type="submit" class="bg-darkblue text-white font-raleway px-7 py-3 hover:bg-blue-950">Send</button>  
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class=" bg-purpleBlue p-5 md:p-10 xl:px-20">
+        <div class="flex flex-col justify-between items-center border-b-2 border-white p-5 md:p-10 md:items-start md:flex-row">
+            <div class="flex flex-col">
+                <div class="flex flex-col items-center justify-center mb-5 md:flex-row text-center md:text-start">
+                    <img src="img/logo-removebg-preview.png" class=" w-28 mb-3 md:mr-3" alt="">
+                    <div class="text-white">
+                        <h1 class="font-bold text-xl font-open md:text-4xl">TBSOCIA 24</h1>
+                        <p class="font-semibold text-sm font-raleway">ALL U NEED IS LESS</p>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507302.32637955796!2d106.84354959749633!3d-6.609667758836508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64ae983d4cd%3A0x230f7037f9668552!2sYayasan%20Taruna%20Bakti!5e0!3m2!1sen!2sid!4v1706628098987!5m2!1sen!2sid" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="flex flex-col text-white">
+                <h3 class="font-poppins font-semibold">CONTACT</h3>
+                <ul class="mt-5">
+                    <a href="" class="font-poppins font-light mb-3"><li>Instagram</li></a>
+                    <a href="" class="font-poppins font-light mb-3"><li>Instagram</li></a>
+                    <a href="" class="font-poppins font-light mb-3"><li>gmail</li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 2000,
+        });
+
+        const navbar = document.querySelector('.navbar');
+
+        function toggleNavbarBackground() {
+            if (window.scrollY > 0) {
+                navbar.classList.remove('bg-transparent');
+                navbar.classList.add('bg-rubyStar', 'shadow-md');
+            } else {
+                navbar.classList.remove('bg-rubyStar', 'shadow-md');
+                navbar.classList.add('bg-transparent');
+            }
+        }
+
+        window.addEventListener('scroll', toggleNavbarBackground);
+
+        const btn = document.getElementById('menu-btn');
+        const nav = document.getElementById('menu');
+
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('hidden');
+        });
+
+        document.getElementById('othersBtn').addEventListener('click', function () {
+            document.getElementById('othersMenu').classList.toggle('hidden');
+        });
+
+        document.getElementById('othersBtn2').addEventListener('click', function () {
+            document.getElementById('othersMenu2').classList.toggle('hidden');
+        });
+
+        function toggleAnswer(answerId) {
+            const answerElement = document.getElementById(answerId);
+            answerElement.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
