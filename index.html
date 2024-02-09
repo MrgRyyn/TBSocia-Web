@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/10d55a3023.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>TB Socia</title>
     <script>
@@ -36,7 +37,7 @@
         <div class="flex items-center justify-between">
             <!-- logo -->
             <div class="pt-1">
-                <img src="img/logo-removebg-preview.png" class=" w-16 " alt="">
+                <a href="index.html"><img src="img/logo-removebg-preview.png" class=" w-16 " alt=""></a>
             </div>
             <!-- menu -->
             <div class="hidden md:flex space-x-6 pr-10">
@@ -92,18 +93,17 @@
 
     <!-- hero -->
     <section id="hero" class="relative -z-10 flex items-center justify-center">
-        <img src="img/hero background .PNG" class="w-screen object-cover h-screen xl:hidden" alt="">
-        <img src="img/tbsocia hero.png" class="hidden w-screen object-cover h-screen xl:block" alt="">
-        <div class="absolute">
-            <img src="img/tb socia hero text.png" alt="" class="tbsocia-hero xl:hidden" >
+        <img src="img/hero background .PNG" class="w-screen object-cover h-screen" alt="">
+        <div class="absolute px-3">
+            <img src="img/tbsocia hero text.png" alt="" class="tbsocia-hero" data-aos="fade-up" >
         </div>
     </section>
 
     <!-- about -->
-    <section id="about" class="bg-beige mb-10 md:p-10 md:mb-20 lg:pt-20 lg:pb-36 pt-20"> <!-- Add pt-20 class -->
-        <div class="flex flex-col items-center justify-center py-7 px-10 lg:px-20 xl:px-40">
-            <h2 class="font-poppins font-bold text-2xl mb-10 text-rubyStar md:text-3xl lg:text-5xl lg:mb-20">ABOUT TBSOCIA</h2>
-            <p class="font-raleway text-rubyStar lg:text-xl xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh id urna imperdiet sollicitudin vitae vel nibh. Sed in nibh vitae justo vehicula commodo molestie sed diam. Suspendisse mi nisi, vestibulum eget lobortis vel, egestas eu libero. Quisque odio turpis, molestie vel mauris at, ornare viverra metus. Quisque at congue neque, vitae pellentesque diam.</p>
+    <section id="about" class="bg-beige pt-20"> <!-- Add pt-20 class -->
+        <div class="flex flex-col items-center justify-center px-10 mb-10 py-7 md:p-10 md:mb-20 lg:pt-20 lg:pb-36 lg:px-20 xl:px-40 ">
+            <h2 class="font-poppins font-bold text-2xl mb-10 text-rubyStar md:text-3xl lg:text-5xl lg:mb-20" data-aos="fade-left" data-aos-duration="1800">ABOUT TBSOCIA</h2>
+            <p class="font-raleway text-rubyStar lg:text-xl xl:text-2xl" data-aos="fade-left" data-aos-duration="2200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac nibh id urna imperdiet sollicitudin vitae vel nibh. Sed in nibh vitae justo vehicula commodo molestie sed diam. Suspendisse mi nisi, vestibulum eget lobortis vel, egestas eu libero. Quisque odio turpis, molestie vel mauris at, ornare viverra metus. Quisque at congue neque, vitae pellentesque diam.</p>
         </div> 
     </section>
 
@@ -117,7 +117,7 @@
             <div class="flex flex-wrap gap-10 items-center justify-start md:justify-start lg:gap-20">
 
                 <!-- articles -->
-                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 ">
+                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 " data-aos="fade-right" data-aos-duration="2500">
                     <div class="flex-1">
                         <img src="img/hero tb socia.jpg" class="w-56 h-48 object-cover  md:w-64 lg:h-64 lg:w-80" alt="">
                     </div>
@@ -128,7 +128,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 ">
+                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 " data-aos="fade-right" data-aos-duration="2000">
                     <div class="flex-1">
                         <img src="img/hero tb socia.jpg" class="w-56 h-48 object-cover  md:w-64 lg:h-64 lg:w-80" alt="">
                     </div>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 ">
+                <div class="flex flex-col shadow-lg w-56 hover:shadow-xl md:w-64 lg:w-80 " data-aos="fade-right" data-aos-duration="1500">
                     <div class="flex-1">
                         <img src="img/hero tb socia.jpg" class="w-56 h-48 object-cover  md:w-64 lg:h-64 lg:w-80" alt="">
                     </div>
@@ -159,8 +159,8 @@
 
 
     <!-- faq -->
-    <section id="faq" class=" mx-auto p-10 mb-5 bg-rubyStar md:px-16 md:pt-24 md:pb-20 md:mb-16 xl:px-20">
-        <div class=" mx-auto">
+    <section id="faq" class=" mb-5 pt-20 md:mb-16">
+        <div class=" mx-auto p-10 bg-rubyStar md:py-20 md:px-16 xl:px-20">
             <h1 class="text-3xl text-white font-playfair text-center font-semibold mb-6 md:text-5xl md:mb-20 xl:text-7xl xl:mb-32">Frequently Asked Questions</h1>
     
             <div class="flex flex-col px-3 py-5 border-t border-neutral-300 md:gap-10 md:flex-row">
@@ -193,17 +193,17 @@
     </section>
 
     <!-- registration -->
-    <section id="registration" class=" bg-beige">
+    <section id="registration" class=" bg-beige pt-20">
         
         <div class="flex flex-col md:flex-row">
-            <div class="flex-1 flex items-center justify-center px-5  mb-10">
+            <div class="flex-1 flex items-center justify-center mb-10 md:px-5">
                 <img src="img/banner.jpg" class="w-full h-60 object-cover md:w-auto md:rounded-2xl md:h-full" alt="">
             </div>
-            <div class="flex-1">
+            <div class="flex-1 pl-5">
                 <div class=" bg-gradient-to-r mb-10 from-rubyStone to-purpleBlue flex items-center justify-center rounded-l-3xl py-10">
                     <h1 class="text-beige font-bold text-4xl">FREE REGISTRATION!</h1>
                 </div>
-                <form action="https://formspree.io/f/mgegedoy" method="POST" class="flex flex-col">
+                <form action="https://formspree.io/f/mgegedoy" method="POST" class="flex pr-5 flex-col md:px-0">
                     <div class="flex flex-col">
                         <div class="relative mb-8">
                             <input placeholder="Your Name" id="name" name="name" type="text" class="border-b-4 border-aquablue py-1 px-2 focus:border-b-4 w-full font-raleway focus:border-blue-700 transition-colors focus:outline-none peer bg-inherit"/>
@@ -235,11 +235,22 @@
             </div>
 
             <div class="flex flex-col text-white">
-                <h3 class="font-poppins font-semibold">CONTACT</h3>
+                <h3 class="font-poppins font-semibold">Navigation</h3>
                 <ul class="mt-5">
-                    <a href="" class="font-poppins font-light mb-3"><li>Instagram</li></a>
-                    <a href="" class="font-poppins font-light mb-3"><li>Instagram</li></a>
-                    <a href="" class="font-poppins font-light mb-3"><li>gmail</li></a>
+                    <a href="index.html" class="font-poppins font-light mb-4"><li class="mb-4">Home</li></a>
+                    <a href="#about" class="font-poppins font-light mb-4"><li class="mb-4">About</li></a>
+                    <a href="#registration" class="font-poppins font-light mb-4"><li class="mb-4">Registration</li></a>
+                    <a href="#article" class="font-poppins font-light mb-4"><li class="mb-4">Article</li></a>
+                    <a href="#faq" class="font-poppins font-light mb-4"><li class="mb-4">FAQ</li></a>
+                </ul>
+            </div>
+
+            <div class="flex flex-col text-white">
+                <h3 class="font-poppins font-semibold">Contact</h3>
+                <ul class="mt-5">
+                    <a href="" class="font-poppins font-light mb-4"><li class="mb-4">Instagram</li></a>
+                    <a href="" class="font-poppins font-light mb-4"><li class="mb-4">Instagram</li></a>
+                    <a href="" class="font-poppins font-light mb-4"><li class="mb-4">gmail</li></a>
                 </ul>
             </div>
         </div>
